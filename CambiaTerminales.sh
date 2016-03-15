@@ -27,6 +27,13 @@ convert "/var/tmp/$FILECONV" -colors 20 -depth 8 -format '%c' histogram:info:- \
   #  | while read colour; do convert -size 20x20 "xc:$colour" +depth miff:-; done \
  #   | montage - -geometry +0+0 "palette.png"
 
+exec 3< paleta.txt
+read color1 <&3
+read color2 <&3
+read color3 <&3
+echo "Four lines: $color1 $color2 $color3"
+exec 3<&-
+
 
 #done
 
