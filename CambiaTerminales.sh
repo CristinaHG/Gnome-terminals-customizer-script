@@ -34,6 +34,7 @@ read color3 <&3
 echo "Four lines: $color1 $color2 $color3"
 exec 3<&-
 
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/foreground_color --type string "$color1"
 
 #done
 
