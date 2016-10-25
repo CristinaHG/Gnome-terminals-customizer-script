@@ -1,4 +1,7 @@
 # My-TerminalsBackgroundSetter
+Script that amuses your routine terminals by changing its background image and selecting a font color that suits to image. 
+
+
 EN:This bash script changes terminal's backgound image randomly, by taking random images from a given route. 
 It also set the terminal text color to one that suits the new background, automatically. To do that, image hibstograms are
 obtained and them a light color is taken.
